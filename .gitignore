@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.spec
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer and shortcuts
+*.lnk
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# User generated audio recordings, exports & local cache (Local-first guarantee)
+Recordings/
+Exports/
+Cache/
+Logs/
+settings.json
+favorites.txt
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+!assets/**/*.png
+!assets/**/*.ico
+!assets/**/*.svg
+!docs/assets/**/*.png
+!docs/assets/**/*.svg
+!docs/screenshots/**/*.png
+
+# Temporary and test artifacts
+*.tmp
+*.bak
+test_*.wav
+cleaner_input.wav
+duzenlenmis_kayit.wav
+.user_uploaded/
