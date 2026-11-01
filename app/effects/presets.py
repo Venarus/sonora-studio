@@ -1,0 +1,143 @@
+"""
+SONORA Studio - Audio Effects Presets
+Professional vocal, broadcast, and mastering presets tailored for voice and studio recording.
+"""
+
+from typing import Dict, Any
+
+STUDIO_PRESETS: Dict[str, Dict[str, Any]] = {
+    "Temiz Ses (Clean Voice)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 85.0,
+        "lowpass_enabled": False,
+        "eq_enabled": True,
+        "eq_low_gain": -1.5,
+        "eq_mid_gain": 2.5,
+        "eq_high_gain": 2.0,
+        "compressor_enabled": True,
+        "comp_threshold_db": -20.0,
+        "comp_ratio": 3.0,
+        "comp_attack_ms": 20.0,
+        "comp_release_ms": 100.0,
+        "comp_makeup_db": 2.5,
+        "gate_enabled": True,
+        "gate_threshold_db": -45.0,
+        "reverb_enabled": False,
+        "delay_enabled": False,
+        "stereo_width_enabled": False,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -0.8
+    },
+    "Doğal Konuşma (Natural Speech)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 75.0,
+        "lowpass_enabled": False,
+        "eq_enabled": False,
+        "compressor_enabled": True,
+        "comp_threshold_db": -22.0,
+        "comp_ratio": 2.2,
+        "comp_attack_ms": 25.0,
+        "comp_release_ms": 120.0,
+        "comp_makeup_db": 1.5,
+        "gate_enabled": False,
+        "reverb_enabled": False,
+        "delay_enabled": False,
+        "stereo_width_enabled": False,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -0.5
+    },
+    "Sıcak Radyo / Podcast (Warm Voice)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 70.0,
+        "lowpass_enabled": False,
+        "eq_enabled": True,
+        "eq_low_gain": 3.0,       # Warm bass presence
+        "eq_mid_gain": 1.5,
+        "eq_high_gain": 2.5,      # Air presence
+        "compressor_enabled": True,
+        "comp_threshold_db": -16.0,
+        "comp_ratio": 4.0,        # Broadcast style tight compression
+        "comp_attack_ms": 10.0,
+        "comp_release_ms": 90.0,
+        "comp_makeup_db": 3.5,
+        "gate_enabled": True,
+        "gate_threshold_db": -42.0,
+        "reverb_enabled": False,
+        "delay_enabled": False,
+        "stereo_width_enabled": False,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -1.0
+    },
+    "Kristal Netlik (Crystal Clear)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 95.0,
+        "lowpass_enabled": True,
+        "lowpass_cutoff": 16000.0,
+        "eq_enabled": True,
+        "eq_low_gain": -2.5,
+        "eq_mid_gain": 4.5,       # Intelligibility peak
+        "eq_high_gain": 3.5,
+        "compressor_enabled": True,
+        "comp_threshold_db": -18.0,
+        "comp_ratio": 3.0,
+        "comp_attack_ms": 15.0,
+        "comp_release_ms": 80.0,
+        "comp_makeup_db": 2.0,
+        "gate_enabled": True,
+        "gate_threshold_db": -44.0,
+        "reverb_enabled": False,
+        "delay_enabled": False,
+        "stereo_width_enabled": False,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -0.5
+    },
+    "Profesyonel Stüdyo (Studio Recording)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 80.0,
+        "lowpass_enabled": False,
+        "eq_enabled": True,
+        "eq_low_gain": 1.0,
+        "eq_mid_gain": 2.0,
+        "eq_high_gain": 3.0,
+        "compressor_enabled": True,
+        "comp_threshold_db": -19.0,
+        "comp_ratio": 3.2,
+        "comp_attack_ms": 18.0,
+        "comp_release_ms": 110.0,
+        "comp_makeup_db": 2.5,
+        "gate_enabled": True,
+        "gate_threshold_db": -46.0,
+        "reverb_enabled": True,
+        "reverb_room_size": 0.25, # Very subtle studio room ambience
+        "reverb_damping": 0.5,
+        "reverb_wet": 0.12,
+        "delay_enabled": False,
+        "stereo_width_enabled": True,
+        "stereo_width_factor": 1.15,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -0.3
+    },
+    "Düşük Gürültülü Vokal (Low Noise)": {
+        "highpass_enabled": True,
+        "highpass_cutoff": 90.0,
+        "lowpass_enabled": True,
+        "lowpass_cutoff": 13000.0,
+        "eq_enabled": True,
+        "eq_low_gain": -1.0,
+        "eq_mid_gain": 1.5,
+        "eq_high_gain": 0.5,
+        "compressor_enabled": True,
+        "comp_threshold_db": -22.0,
+        "comp_ratio": 2.8,
+        "comp_attack_ms": 25.0,
+        "comp_release_ms": 130.0,
+        "comp_makeup_db": 2.0,
+        "gate_enabled": True,
+        "gate_threshold_db": -40.0,
+        "reverb_enabled": False,
+        "delay_enabled": False,
+        "stereo_width_enabled": False,
+        "limiter_enabled": True,
+        "limiter_ceiling_db": -0.5
+    }
+}
