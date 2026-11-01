@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161822"/>
+      <stop offset="50%" stop-color="#0F1017"/>
+      <stop offset="100%" stop-color="#090A0E"/>
+    </linearGradient>
+
+    <!-- Neon Emerald Brand Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00B488"/>
+      <stop offset="50%" stop-color="#00E5A3"/>
+      <stop offset="100%" stop-color="#55F8CB"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="emeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5A3" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00E5A3" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base Container -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bgGrad)" stroke="#232736" stroke-width="4"/>
+  <rect x="36" y="36" width="440" height="440" rx="96" fill="none" stroke="url(#ringGrad)" stroke-width="2"/>
+
+  <!-- Subtle Radial Studio Aura -->
+  <circle cx="256" cy="256" r="140" fill="#00E5A3" fill-opacity="0.06"/>
+
+  <!-- Soundwave Pulse Bars (Antialiased geometric audio frequency) -->
+  <g filter="url(#emeraldGlow)">
+    <!-- Bar 1 (Outer Left) -->
+    <rect x="110" y="226" width="18" height="60" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 2 -->
+    <rect x="146" y="196" width="18" height="120" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 3 -->
+    <rect x="182" y="156" width="18" height="200" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 4 -->
+    <rect x="218" y="126" width="18" height="260" rx="9" fill="url(#emeraldGrad)"/>
+    
+    <!-- Central Power Wave (Center Pinnacle) -->
+    <rect x="254" y="100" width="20" height="312" rx="10" fill="#FFFFFF"/>
+    
+    <!-- Bar 6 -->
+    <rect x="294" y="126" width="18" height="260" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 7 -->
+    <rect x="330" y="156" width="18" height="200" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 8 -->
+    <rect x="366" y="196" width="18" height="120" rx="9" fill="url(#emeraldGrad)"/>
+    <!-- Bar 9 (Outer Right) -->
+    <rect x="402" y="226" width="18" height="60" rx="9" fill="url(#emeraldGrad)"/>
+  </g>
+
+  <!-- Horizontal Axis Line with Studio Dot -->
+  <line x1="84" y1="256" x2="428" y2="256" stroke="#00E5A3" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="4 8"/>
+  <circle cx="256" cy="256" r="4" fill="#FFFFFF"/>
+</svg>
